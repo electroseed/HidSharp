@@ -157,9 +157,9 @@ namespace HidSharp.Reports.Encodings
                 if (value == 0)
                     { DataValue = (uint)value; }
                 else if (value >= sbyte.MinValue && value <= sbyte.MaxValue)
-                    { DataValue = (uint)(sbyte)value; if (value < 0) { Data.Add(0); } }
+                    { DataValue = (uint)(sbyte)value; }
                 else if (value >= short.MinValue && value <= short.MaxValue)
-                    { DataValue = (uint)(short)value; if (value < 0) { Data.Add(0); Data.Add(0); } }
+                    { DataValue = (uint)(short)value; }
                 else
                     { DataValue = (uint)value; }
             }
